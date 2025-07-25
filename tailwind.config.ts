@@ -18,15 +18,24 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Inter', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'space': ['Space Grotesk', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
+				'background-alt': 'hsl(var(--background-alt))',
 				foreground: 'hsl(var(--foreground))',
+				'foreground-muted': 'hsl(var(--foreground-muted))',
+				'foreground-subtle': 'hsl(var(--foreground-subtle))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -42,7 +51,8 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					glow: 'hsl(var(--accent-glow))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -50,8 +60,31 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foreground: 'hsl(var(--card-foreground))',
+					border: 'hsl(var(--card-border))'
 				},
+				electric: {
+					DEFAULT: 'hsl(var(--electric))',
+					glow: 'hsl(var(--electric-glow))'
+				},
+				pulse: {
+					DEFAULT: 'hsl(var(--pulse))',
+					glow: 'hsl(var(--pulse-glow))'
+				},
+				'soft-red': {
+					DEFAULT: 'hsl(var(--soft-red))',
+					glow: 'hsl(var(--soft-red-glow))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					glow: 'hsl(var(--success-glow))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					glow: 'hsl(var(--warning-glow))'
+				},
+				glass: 'hsl(var(--glass))',
+				'glass-border': 'hsl(var(--glass-border))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
